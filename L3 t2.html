@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head></head>    
+    <body>
+        <script>
+          let basket = [{name:"item1", price:100}, {name:"item2", price:150}, {name:"item3", price:200}];
+            let basketPrice = 0;
+            for (let item of basket){
+            basketPrice += item.price;
+            console.log("Товар " + item.name + " стоит: " + item.price);
+            }
+            console.log("Стоимость корзины: " + basketPrice + " руб.");
+        </script>
+    </body>
+</html>
