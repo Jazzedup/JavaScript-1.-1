@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head></head>    
+    <body>
+        <script>
+            let max = 999;
+            let input = {
+                number: prompt("Введите число от 0 до 999"),
+        units: 0,
+        tens: 0,
+        hundreds: 0,
+    };
+    if (input.number <= 9){
+        input.units = input.number;
+    } else if (input.number <= 999){
+        input.units = Math.floor(input.number % 10);
+        input.tens = Math.floor(input.number / 10 % 10);
+        input.hundreds = Math.floor(input.number / 100 % 10);
+    } else {
+        input.number = 0;
+        console.log("Некорректное число");
+    }
+    console.log(input);
+        </script>
+    </body>
+</html>
